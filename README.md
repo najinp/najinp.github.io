@@ -1,1 +1,0 @@
-# najinp.github.io
