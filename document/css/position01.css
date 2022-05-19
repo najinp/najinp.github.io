@@ -1,0 +1,23 @@
+.popup {
+    position :absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* 위에것 공식으로 외워두는게 좋음 단위를 꼭 써줘야함 수치르 ㄹ*/
+     width: 450px; 
+     height: 350px; 
+     background: #f00;}
+
+.popup button {
+position: absolute;
+bottom: 15px;
+right: 15px;
+/* 기준은 형제에게 안먹음.바디를 기준으로  */
+
+}
+
+    
+
+    /* 앱솔르트뛰어놓았으니.. 기준 바디를 찾아서 
+    트랜스폼은 자기자신의 사이즈의 50프로 x축으로 -50%  
+    트랜스폼은 두번쓰지않음. xy 축약형으로 앞이 x 뒤가 y*/

@@ -1,0 +1,79 @@
+body {
+    background: #333;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: -500px;
+    width: 500px;
+    height: 100vh;
+    /* vh 뷰포트하이트 화면의 높이  100프로는 바디를 기준으로 */
+    background: #fff;
+    transition: 0.5s;
+}
+
+/* 네이버 클래스 온이라는 놈이 붙어있을떄 */
+nav.oo {
+    left: 0;
+}
+
+.mopen {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    background: #ddd;
+    /* 픽스드는 스크롤바를 만들지 않았음 화면에서 고정 앱솔루트는 없어지ㅣ */
+}
+
+.mopen span {
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    display: block;
+    height: 3px;
+    background: #f00;
+    transition: 0.5s;
+}
+
+.mopen span:nth-child(1) {
+    top: 5px;
+
+}
+
+.mopen.oo span:nth-child(1) {
+    opacity: 0;
+
+}
+
+.mopen span:nth-child(2) {
+    top: 14px;
+}
+
+
+.mopen.oo span:nth-child(2) {
+    transform: rotate(45deg);
+
+}
+/* 트랜스폼은 자기자신을바꿈/ 트랜지션은 애니매이션을줌  */
+.mopen span:nth-child(3) {
+    top: 14px;
+
+}
+
+.mopen.oo span:nth-child(3) {
+    transform: rotate(-45deg);
+
+
+}
+
+.mopen span:nth-child(4) {
+    bottom: 5px;
+
+}
+
+.mopen.oo span:nth-child(4) {
+    opacity: 0;
+}
