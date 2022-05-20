@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#event {
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* 잡아오는 방법이 다양함.. 이름을 붙여서 잡아올수도 있고 등 */
+#event i {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#event h2 {
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+/* 가상요소 html에서 박스만드는거는 웹표준에 어긋나는데 이건 ㄱㅊ */
+
+#event h2::before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    background: #f00;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+#event h2::after {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    background: #f00;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+#event p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+    line-height: 1.4;
+}
+
+#event .container {
+    display: flex;
+    gap: 30px;
+    /* 갭은 좌우말고 사진사이만 띄워줌.. ?보통은 기준이 30px으로 띄움 거트라고 부름 인터넷익스플로러에서 안돌아간다고함..*/
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#event img {
+    max-width: 100%;
+    transition: 0.5s;
+}
+
+#event figure {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    /* flex : 1 검색해보기 1분코딩 사이트.. 정독 */
+}
+
+#event .container figure:hover img {
+    transform: scale(2);
+}
+
+/* 트랜스폼은 레이아웃을 변형시키지않는다 */
+
+
+/* 호버는 마우스가 어디 올렷을때 이미지에 올렷을때 이미지바뀌게 하는거.. */
+#event figure a {
+    ;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #333;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#event figure:hover a {
+    top: 0;
+}
