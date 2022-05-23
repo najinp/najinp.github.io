@@ -1,0 +1,46 @@
+.content {
+    padding: 100px 0;
+
+}
+
+.content .container {
+    display: flex;
+    gap: 30px;
+    /* 갭의 단점 인터넷 익스플로러 사용  네이버웨일을 깔아주면 해결 ? ㅎ */
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+/* 순서 보통 이런식으로 포지션 디스플레이 와이드 헤이트 폰트관련  아트사이트 트랜스폼 경우에 따라 달라질수있음.*/
+
+.content .container figure {
+    flex: 1;
+    /* padding : 이런방식보다 갭으로 넣어주기 콘텐츠 컨테이너에 */
+
+}
+
+.content img {
+    width: 100%;
+    margin: 0 0 20px 0;
+    /* 상우하좌/ 상하 좌우 / 상 좌우 하 */
+
+
+}
+
+.content strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+
+    /* 스트롱은 아래위로 마진 패딩도 안먹 */
+}
+
+.content p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+/* 포토샵비율은 1.25 라인하이트 
+그리고 라인하이트때매 벌어지는 공간이 잇음 ㅋ*/
