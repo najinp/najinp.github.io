@@ -31,3 +31,7 @@ body {
     /* 폰트사이즈의 1배라는 뜻.. ? */
     font-family: 'Noto Sans KR', sans-serif;
 }
+
+img {
+    vertical-align: middle;
+}
