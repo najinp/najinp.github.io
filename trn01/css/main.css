@@ -106,6 +106,16 @@ body {
     position: relative;
 }
 
+.main_visual::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/pt-bg01.png);
+}
+
 .main_visual .main_slider img {
     width: 100%;
 }
@@ -118,6 +128,7 @@ body {
     text-align: right;
     color: var(--wc);
     text-shadow: 0 0 2px var(--dc);
+    z-index: 999;
 
 }
 
@@ -134,12 +145,237 @@ body {
     width: 4rem;
     height: 2px;
     background: var(--wc);
-    margin: 1rem 5px  0 auto;
+    margin: 1rem 5px 0 auto;
 }
 
 .main_visual .slogan p {
     font-size: 0.75rem;
     font-weight: 300;
     line-height: 1.4;
+
+}
+
+/* .test_bg {    
+    background: #f00 url(../img/main_banner01.jpg) no-repeat center center/cover ;
+    /* 축약형 순서 참고 ~ 
+    fixed 아이폰에서 안됨...center x 좌표 y좌표 */
+/* 
+    height: 300px;
+    margin-bottom: 1000px;} 
+/* 기본적으로 반복됨 그림이 
+cover는 박스를  가득채우려고 노력함
+contain은 그림을 다 보여줘라 */
+
+.main_visual figure {
+    height: 30rem;
+
+}
+
+.main_visual .item01 {
+    background: url(../img/main_bg01.jpg) no-repeat center center/auto 100%;
+}
+
+.main_visual .item01.on {
+    background: url(../img/main_bg01.jpg) no-repeat center center/auto 120%;
+    transition: 2s;
+}
+
+
+.main_visual .item02 {
+    background: url(../img/main_bg02.jpg) no-repeat center center/auto 100%;
+}
+
+.main_visual .item02.on {
+    background: url(../img/main_bg02.jpg) no-repeat center center/auto 120%;
+    transition: 2s;
+}
+
+.main_visual .item03 {
+    background: url(../img/main_bg03.jpg) no-repeat center center/auto 100%;
+}
+
+.main_visual .item03.on {
+    background: url(../img/main_bg03.jpg) no-repeat center center/auto 150%;
+    transition: 2s;
+}
+
+.content {
+    padding: 100px 0;
+
+}
+
+.content .container {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+/* .content .contatiner figure 혹은 .content figure 라고 적어도 됨 */
+.content .container>* {
+    flex: 1;
+}
+
+.content figure .box {
+    overflow: hidden;
+    margin: 0 0 20px 0;
+}
+
+
+.content figure img {
+    transition: 0.5s;
+}
+
+.content figure:hover img {
+    transform: scale(1.5);
+}
+
+
+.content strong {
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 0 17px 0;
+}
+
+/* 라인하이트 줘도 됨.... 글자에 .. ? 근데 글자맞추기 쉬우라고 저렇게  */
+
+/* 마진은 아래로 주는게 정석 위로 주면 겹침현상이 생길수잇음 */
+
+.content p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+
+}
+
+.product {
+    padding: 30px 0;
+    border-top: 1px solid var(--gc);
+
+
+}
+
+.product .container {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.product .container .left {
+    flex: 2;
+}
+
+.product .container .right {
+    flex: 1;
+    line-height: 1.4;
+    border-left: 1px solid var(--gc);
+    padding: 15px 0 0 30px;
+}
+
+.product .container .left ul {
+    display: flex;
+    gap: 10px;
+
+}
+
+.product .tel a {
+    border-bottom: 1px solid var(--mc);
+    margin: 0 0 15px 0;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 2;
+
+
+}
+
+.customer {
+    display: flex;
+}
+
+.customer>div {
+    flex: 1
+}
+
+.customer .left {
+    text-align: right;
+    background: url(../img/main_banner01.jpg) no-repeat center center/cover;
+}
+
+.customer .right {
+    background: url(../img/main_banner02.jpg) no-repeat center center/cover;
+    border-left: 1px solid var(--gc);
+}
+
+.customer>div a {
+    display: block;
+    color: #fff;
+    padding: 50px 40px;
+    text-shadow: 0 0 30px var(--dc) background: url(../img/pt-bg01.png);
+
+}
+
+.customer>div a h3 {
+    font-size: 31px;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+
+.customer>div a p {
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
+.footer {
+    padding: 30px 0 50px 0;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.footer .container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .container.logo {
+    flex: 1;
+}
+
+.footer img {
+    width: 200px;
+}
+
+.footer address {
+    flex: 4;
+    font-style: normal;
+    padding: 15px 0 0 0;
+}
+
+.footer address ul {
+    margin: 0 0 10px 0;
+
+
+}
+
+.footer address ul li {
+    display: inline-block;
+}
+
+
+.footer address ul li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background: var(--gc);
+    margin: 0 7px;
 
 }
