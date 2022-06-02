@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 박스 : Box-model / 기본 박스 01</title>
+    <!-- 외부 스타일 시트(External style sheet) -->
+    <!-- 모듈화 -->
+    <link rel="stylesheet" href="">
+    <!-- 내부 스타일 시트(Internal style sheet) -->
+    <!-- 국소적인곳에  -->
+    <style>
+        /* 선택자 */
+        div {
+            width: 1200px;
+            background: rgba(0, 0, 0, 0.3);
+            /* 
+            margin, padding, inset
+            축약형 방향 : 상 우 하 좌(4) 
+            축약형 방향 : 상 좌우 하(3)
+            축약형 방향 : 상하 좌우(2)
+            */
+            margin: 50px 0;
+            /* 박스사이 margin은 겹침 현상이 생긴다.
+            부모block과 첫번째 자식 block 사이에도 margin겹침 현상이 생긴다. 
+            (마진의 방향은 아랫쪽으로 주는것이 좋다. 좌우 마진이 레이아웃을 깰때가 있음)
+          */
+        }
+
+        div:nth-child(1) {
+            padding: 0 100px;
+            box-sizing: border-box;
+            /* border-box : block의 안 쪽으로 padding과 border를 가둔다. for layout */
+        }
+
+        /* 박스에 padding, border를 주면 넓이가 정해져있어도 늘어난다. */
+        /* nth-child는 잘안씀 하수코딩 국소적으로만 씀 */
+    </style>
+    <!-- http://www.tcpschool.com/css/css_intro_apply -->
+    <!-- 내부스타일이 외부스타일이 계급이 높긴한데? 뒤에오는것이 덮어씀 내부스타일 시트는 바디에 써도 됨 웹표준에 어긋나진 않는다. -->
+</head>
+
+<body>
+    <!-- 인라인 스타일(Inline style) sytle="" -->
+
+    <div>BOX01</div>
+    <div>BOX02</div>
+    <div>BOX03</div>
+    <!-- vs code : 
+    alt + shift +방향키 복사/
+alt +방향키는 위치를 옮김 -->
+    <h2>box의 기본 성질(display:block)</h2>
+    <ul>
+        <li>투명하다.</li>
+        <li>width: auto / height: auto</li>
+        <li>Y축으로 쌓여간다.</li>
+        <li>block 옆에 block이 오지 못하게 한다.</li>
+        <!-- 플롯이나 display : flex 기능으로 옆에 오게함  -->
+    </ul>
+    <ol>
+        <li>태그는 크게 inline / block으로 나뉜다.</li>
+        <li>글자 그림 등 내용에 관여하는 태그 <span>span</span> <strong>strong</strong> <em> em </em> <i>icon</i>
+            <!-- span 은 빨간색으로 만들고싶다 그럴때 씀 -->
+            <button>button</button>
+            <input> input, button, img는 인라인 속성을 가지고 나머지는 block 속성을 가진다.
+        </li>
+        <li> block 속성은 width, height, margin, padding 값을 가지고, inline 속성은 좌우 margin padding 만을 가진다.</li>
+        <li> inline 상하 padding의 경우 background를 포함하여 padding이 적용된 것 처럼 보인다. </li>
+    </ol>
+
+    <p>css는 레이아웃을 만들어준다.
+        <br />인라인 스타일(Inline style)이 외부/내부 스타일 보다 우선한다. (계급이 높다.)
+        <br />
+        javascript의 적용범위는 인라인 스타일(Inline style)이므로 외부/내부 스타일 보다 우선한다.
+        <br />
+        style name role : attribute, property / props(리액트) 로 부른다.
+    </p>
+</body>
+
+</html>
