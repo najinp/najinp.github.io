@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header05 - 로고 중간정렬</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/basic01.css">
+    <style>
+        /* * {
+            outline: 1px solid #f00;
+        } 아웃라인 확인하고싶을때 ~ */
+
+        .header {
+            background: #f7f7f7;
+            line-height: 100px;
+
+        }
+
+        .header .container {
+
+            justify-content: space-between;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+
+
+        .header nav {
+            /* margin: 0 auto 0 auto; */
+        }
+
+
+
+        .header nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header nav>* {
+            flex: 1
+        }
+
+        .header h1 {
+            text-align: center;
+        }
+
+        .header nav>ul {
+            display: flex;
+            gap: 40px;
+        }
+
+        .header nav>.service {
+            justify-content: flex-end;
+        }
+
+        .header nav>ul a {
+            display: block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Wrap">
+        <header class="header">
+            <div class="container">
+
+                <nav>
+                    <ul>
+                        <li><a href="">menu01</a></li>
+                        <li><a href="">menu02</a></li>
+
+                    </ul>
+                    <h1>
+                        <a href="/">
+                            <img src="../img/logo.png" alt="">
+                        </a>
+                    </h1>
+                    <ul class="service">
+
+                        <li><a href="">menu03</a></li>
+                        <li><a href="">menu04</a></li>
+                        <li><a href="">menu05</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="main_visual">
+
+            </div>
+        </main>
+        <footer class="footer">
+            &copy basic template.
+        </footer>
+    </div>
+</body>
+
+</html>
