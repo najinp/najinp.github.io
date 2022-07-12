@@ -1,0 +1,172 @@
+.Wrap {color: #000;}
+
+.container {
+width: 1660px;
+    margin: 0 auto;
+}
+.inner {
+
+    width: 1700px;
+    margin: 0 auto;
+
+}
+
+.headerEvent {
+    /* inset: 0 auto auto 0;
+   /* padding: 30px 0;*/
+    background: #333;
+    font-size: 13px;
+    color: #ddd;
+    line-height: 30px;
+    text-align: center;
+}
+
+.header .container {
+    display: flex;
+}
+.header {
+    position: sticky;
+    inset : 0 auto auto 0;
+    line-height: 70px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 500;
+    background: #fff;
+    z-index: 999;
+}
+
+.header h1 {
+ padding: 0 20px 0 0
+}
+
+.header h1 a {
+    display: block;
+}
+
+.header .container {
+    justify-content: space-between;
+}
+
+.navLeft {display: flex;}
+
+.header nav>ul {
+    display: flex;
+
+}
+
+.navRight  ul {display: flex;
+gap: 40px;}
+
+.header nav>ul>li>a {
+    padding: 0 20px;
+}
+.main {height: 680px;
+width: auto;} 
+
+.main .mainSlider .mainPicLeft {
+    height: 680px;
+    width: 1100px;
+    background: url(../img/main01.jpg) no-repeat center center/cover;
+}
+
+
+
+/* 메인1 */
+.BestSel {
+    margin: 100px 0;
+}
+
+
+
+.BestSel .container>h2 {
+    text-align: center;
+    font-size: 21px;
+    margin: 0  0  30px 0;
+
+}
+
+.BsSlider .BsPic {
+    width:533px;
+    height: 533px;
+    margin: 0 0 30px 0;
+}
+
+.BsSlider figure h2{ margin: 0 0 10px 0;}
+.BsSlider figure span{ 
+    margin: 0 0 10px 0;}
+.BsSlider figure strong{ 
+  
+    margin: 0 0 10px 0;
+font-weight: 200;}
+
+.BsSlider figure h2{ margin: 0 0 10px 0;}
+.BsSlider figure h3{ margin: 0 0 10px 0;}
+
+
+.BsSlider .item01 .BsPic{
+    background: url(../img/bs01.jpg)no-repeat center center/cover ; 
+
+} 
+
+.BsSlider .item02 .BsPic{
+    background: url(../img/bs02.jpeg) no-repeat center center/cover; 
+  
+} 
+
+.BsSlider .item03 .BsPic{
+    background: url(../img/bs03.jpg) no-repeat center center/cover; 
+  
+} 
+
+.BsSlider .item04 .BsPic{
+    background: url(../img/bs01.jpg) no-repeat center center/cover; 
+   
+} 
+
+.about {
+    background: url(../img/abooutbg.gif) no-repeat center center/cover;
+    height: 500px;
+    width: 100%;
+}
+
+.jericho {
+    margin: 100px 0;
+
+}
+
+.jericho .container .product{
+    position: relative;
+}
+
+.jericho .container>h2 {
+    text-align: center;
+    font-size: 21px;
+    margin: 0  0  30px 0;
+
+}
+
+
+.jericho .container .product ul{
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+.jericho .container .product ul li {flex: 1;}
+
+
+
+.jericho .container .productHover ul{
+    position: absolute;
+ top: 0;
+ left:0 ;
+    display: flex;
+    gap: 30px;
+    z-index: 998;
+    width: 100%;
+
+}
+
+.jericho .container .productHover ul li video {
+    width: 100%;
+}
+
