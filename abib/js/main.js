@@ -3,6 +3,8 @@ $(function () {
     $('.BsSlider').slick({
         slidesToShow: 3,
         arrows: false,
+        pauseOnHover: false,
+        pauseOnFocus: false,
     });
 
 
