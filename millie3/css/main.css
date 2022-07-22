@@ -1,0 +1,416 @@
+/* * {
+    outline: 1px solid #f00;
+} */
+
+.Wrap {
+    color: #000;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    /* border-bottom: 1px solid #999; */
+
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+}
+
+.navLeft {
+    display: flex;
+}
+
+.navLeft h1 img {
+    width: 80px;
+    height: auto;
+}
+
+.navLeft h1 {
+    padding: 0 50px 0 0;
+}
+
+.navLeft ul {
+    display: flex;
+    gap: 30px;
+}
+
+.navRight ul {
+    display: flex;
+    gap: 30px;
+}
+
+.pop {
+    display: block;
+    position: fixed;
+    bottom: 16px;
+    left: 50%;
+    /* -webkit-transform: translateX(-50%);*/
+    transform: translateX(-50%);
+    z-index: 100;
+    max-width: 450px;
+    width: 90%;
+    cursor: pointer;
+    margin: 0 auto;
+    background: #333;
+    /* box-shadow: 0 4px 12px rgb(0 0 0 / 16%), 4px 8px 28px rgb(0 0 0 / 8%); */
+    border-radius: 60px;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+    line-height: 24px;
+    font-size: 16px;
+    /* min-height: 56px; */
+}
+
+/* 메인메인메인메인 */
+
+.tabContent {
+    background: linear-gradient(rgba(240, 176, 173, 0.4), rgba(208, 123, 177, 0.4));
+    height: 700px;
+    ;
+}
+
+.tabContent>li {
+    display: none;
+
+}
+
+.tabContent>li.on {
+    display: block;
+}
+
+.tabMenu {
+    display: flex;
+
+
+}
+
+.tabMenu>li {
+    flex: 1;
+    text-align: center;
+}
+
+
+.tabMenu>li>a {
+    display: block;
+    line-height: 60px;
+    padding: 0 15px;
+    background: #f7f7f7;
+
+}
+
+.tabMenu>li.on a {
+    background: rgba(208, 123, 177, 0.4);
+    color: #333;
+}
+
+
+.tabMenu>li~li {
+    border-left: 1px solid #fff
+}
+
+.main .inner {
+    display: flex;
+}
+
+.main .mainLeft {
+    padding: 70px 0;
+    width: 600px;
+    height: auto;
+}
+
+.main .mainRight {
+    width: 600px;
+    height: auto;
+}
+
+
+.main .mainLeft i {
+    display: inline-block;
+    font-size: 21px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 0 30px 0;
+}
+
+.main .mainLeft img {
+    display: inline-block;
+    width: 41px;
+    padding: 10px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 0 30px 0;
+}
+
+.main .mainLeft h2 {
+    font-size: 49px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+.main .mainLeft h3 {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0 0 200px 0;
+}
+
+.main .mainLeft strong {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.main .mainLeft p {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.main .mainLeft .slideText {
+    margin: 0 0 30px 0;
+}
+
+.main .mainLeft .slideText p {
+    margin: 0 0 30px 0;
+}
+
+.main .mainRight {
+    position: relative;
+    /* padding: 50px 0; */
+
+}
+
+.main .mainRight .phone {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 280px;
+
+
+}
+
+.main .mainRight .phone img {
+    width: auto;
+    /* z-index: 1000; */
+}
+
+.main .mainRight .mainSlide {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.slideText .slick-dots {
+    display: flex;
+    gap: 10px;
+
+}
+
+.slideText .slick-dots li {
+    border: none;
+}
+
+.slideText .slick-dots li button {
+    padding: 0 18px;
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 50px;
+}
+
+.slideText .slick-dots .slick-active button {
+    background: #000;
+    color: #fff;
+}
+
+
+.main .mainRight .mainSlide img,
+.main .mainRight .mainSlide video {
+    width: 100%;
+
+}
+
+/* -----------------------------섹션 페이머스 ------------------------------ */
+
+.famous {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.famous h2 {
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0 0 30px 0;
+}
+
+.famous p {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0 0 50px 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.faTabMenu {
+    display: flex;
+    gap: 10px;
+    margin: 0 0 10px 0;
+}
+
+.faTabMenu>li>a {
+    display: block;
+    padding: 7px 18px;
+    background: #f7f7f7;
+    border: 1px solid #000;
+    border-radius: 60px;
+    font-size: 15px;
+}
+
+.faTabMenu>li.on a {
+    background: #333;
+    color: #fff;
+}
+
+
+
+.faTabContent>li {
+    display: none;
+
+}
+
+.faTabContent>li.on {
+    display: block;
+}
+
+.faTabContent li ul {
+    display: flex;
+    gap: 15px;
+}
+
+.faTabContent img {
+    height: 100%;
+}
+
+/* ---------------------섹션 타임------------------- */
+
+.time {
+    padding: 50px 0 0 0;
+    text-align: center;
+}
+
+.time h2 {
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0 0 30px 0;
+}
+
+.time p {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0 0 50px 0;
+}
+
+.timePic {
+    position: relative;
+}
+
+.tPs {
+    top: 0;
+    left: 0;
+}
+
+.tPs img {
+    width: 172px;
+}
+
+.tPs .card01 {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+
+.tPs .card02 {
+    position: absolute;
+    top: 50px;
+    right: 200px;
+}
+
+.tPs .card03 {
+    position: absolute;
+    left: 150px;
+    bottom: 50px;
+}
+
+.tPs .card04 {
+    position: absolute;
+    right: 150px;
+    bottom: 50px;
+}
+
+/* -----------------------구독구독구독---------------------- */
+
+.subscribe {
+    padding: 100px 0;
+    background: rgba(240, 176, 173, 0.1);
+    height: 700px;
+    text-align: center;
+}
+
+.subscribe h2 {
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0 0 30px 0;
+}
+
+.subscribe p {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0 0 50px 0;
+}
+
+.subscribe .box01 {
+    background: #fff;
+    border-radius: 70px;
+    box-shadow: 10px 10px 40px rgb(0 0 0 / 10%);
+    height: 200px;
+    z-index: 999;
+}
+
+/* --------------북북슬라이드슬라이드------------------- */
+.bookSlide {
+    background: #fff;
+    height: 700px;
+}
+
+
+/* -----------------------푸터푸터------------------------------- */
+.footer {
+    color: #6f6f6f;
+    border-top: 1px solid #333;
+}
+
+.footer dd {
+    display: inline-block;
+
+}
